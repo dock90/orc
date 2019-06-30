@@ -3,6 +3,7 @@ import Head from 'next/head';
 // material
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
@@ -50,7 +51,7 @@ const Index = () => {
             <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and actionable suggestions to improve your business.</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
-            <Button variant="contained" color="primary" className={classes.button}><Typography variant='h5'>Start Now</Typography></Button>
+            <Fab variant="extended" color="primary" className={classes.button}><Typography variant='h5'>Start Now</Typography></Fab>
           </Grid>
         </Grid>
 

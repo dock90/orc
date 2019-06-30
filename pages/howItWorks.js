@@ -2,7 +2,7 @@
 import Head from 'next/head';
 // material
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -42,13 +42,13 @@ const HowItWorks = () => {
         <title>ORC - How It Works</title>
         <meta name="description" content="Online Runway Calculator is a tool based on over four years of failing then successfully running a service based creative business." />
       </Head>
-      <Card>
+      <Card elevation={5}>
         <Grid container className={classes.introContainer}>
           <Grid item xs={12} className={classes.introTitle}>
             <Typography variant='h3'>How do I calculate runway?</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
-            <Typography variant='body1'>My recommendations are based on over four years of failing then successfully running a service based creative business so I can relate what you are going through.</Typography>
+            <Typography variant='body1'>My recommendations are based on over four years of failing then successfully running a service based creative business so I can relate what you are going through. Heavy inspiration is also drawn from Jason and Caroline over at <a href='https://wanderingaimfully.com/'>Wandering Aimfully</a>.</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
             <Typography variant='body1'>Finances are usually a confusing and most likely avoided subject for solo creatives. Yet understanding finances is critical if you are going to run a successful business. It literally makes or breaks your work.</Typography>
@@ -57,7 +57,7 @@ const HowItWorks = () => {
             <Typography variant='body1'>Keeping this in mind I came up with the online business calculator - a simple tool that asks you a few questions and gives you valuable insight sna actionable next steps to understand where your business is and what steps to take next.</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introTitle}>
-            <Button variant="contained" color="primary" className={classes.button}><Typography variant='h5'>Start Now</Typography></Button>
+            <Fab variant="extended" color="primary" className={classes.button}><Typography variant='h5'>Start Now</Typography></Fab>
           </Grid>
         </Grid>
       </Card>
