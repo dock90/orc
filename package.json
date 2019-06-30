@@ -1,6 +1,6 @@
 {
   "name": "orc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Online runway calculator for solo creative business owners.",
   "main": "index.js",
   "repository": "git@github.com:EdwardGoomba/orc.git",
