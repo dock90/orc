@@ -1,8 +1,10 @@
+import React from 'react';
+// next
+import App, { Container } from 'next/app';
+// material
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/styles';
-import App, { Container } from 'next/app';
-import React from 'react';
-
+// theme
 import { theme } from '../lib/theme';
 
 import Header from '../components/Header';
@@ -40,7 +42,7 @@ class MyApp extends App {
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <Header {...pageProps} />
+          {/* <Header {...pageProps} /> */}
           <Component {...pageProps} />
         </ThemeProvider>
       </Container>
