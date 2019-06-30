@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
           <link
             rel="shortcut icon"
-            href="https://storage.googleapis.com/builderbook/favicon32.png"
+          // href="https://storage.googleapis.com/builderbook/favicon32.png"
           />
           <link
             rel="stylesheet"
