@@ -41,7 +41,7 @@ const Index = () => {
           <Typography variant='h1'>How is your business doing financially?</Typography>
         </Grid>
         <Grid item xs={12} className={classes.introItem}>
-          <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insights and actionful suggestions to improve your business.</Typography>
+          <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and suggestions to improve your business.</Typography>
         </Grid>
         <Grid item xs={12} className={classes.introItem}>
           <Button variant="contained" color="primary" className={classes.button}><Typography variant='h5'>Start Now</Typography></Button>
