@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
 
 const Index = () => {
   const classes = useStyles();
-  console.log('Orc version: 0.0.6')
+  console.log('Orc version: 0.0.7')
   return (
     <div className={classes.root}>
       <Head>
@@ -61,7 +61,7 @@ const Index = () => {
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
             <Button variant='contained' color='primary' className={classes.button}><Typography variant='h5'>
-              <Link prefetch href='/orc/generalbusiness' >
+              <Link prefetch href='/orc/generalBusiness' as='/orc/generalbusiness'>
                 <a style={{ textDecoration: 'none', color: '#FFF' }}>Start Now</a>
               </Link></Typography>
             </Button>

@@ -92,7 +92,7 @@ const GeneralBusiness = () => {
         </Grid>
         <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleOtherChoice}>
-            <Typography variant='h4' className={classes.choiceCopy}><Link prefetch href='/orc/otherbusiness'><a style={{ textDecoration: 'none', color: ironsideGray.background }}>Other</a></Link></Typography>
+            <Typography variant='h4' className={classes.choiceCopy}><Link prefetch href='/orc/otherBusiness' as='/orc/otherbusiness'><a style={{ textDecoration: 'none', color: ironsideGray.background }}>Other</a></Link></Typography>
           </Card>
         </Grid>
       </Grid>
