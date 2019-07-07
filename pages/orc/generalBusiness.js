@@ -11,6 +11,18 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
+  actionTextContainer: {
+    marginTop: 50,
+    [theme.breakpoints.up('md')]: {
+      marginTop: 300,
+    },
+  },
+  actionTextItem: {
+    textAlign: 'center'
+  },
+  actionTextCopy: {
+    marginBottom: 40
+  },
   typeContainer: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -52,9 +64,9 @@ const GeneralBusiness = () => {
         <title>ORC - General Business Info</title>
         <meta name="description" content="Start by telling me more about your business - what kind of business do you have?" />
       </Head>
-      <Grid container>
-        <Grid item xs={12} style={{ textAlign: 'center' }}>
-          <h1>What kind of business do you have?</h1>
+      <Grid container className={classes.actionTextContainer}>
+        <Grid item xs={12} className={classes.actionTextItem}>
+          <Typography variant='h3' className={classes.actionTextCopy}>What kind of business do you have?</Typography>
         </Grid>
       </Grid>
       <Grid container className={classes.typeContainer}>
