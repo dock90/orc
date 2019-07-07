@@ -43,6 +43,7 @@ const useStyles = makeStyles(theme => ({
 
 const Index = () => {
   const classes = useStyles();
+  console.log('Orc version: 0.0.4')
   return (
     <div className={classes.root}>
       <Head>
