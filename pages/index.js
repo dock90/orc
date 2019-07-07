@@ -17,10 +17,11 @@ const useStyles = makeStyles(theme => ({
     margin: '0px 20px 0px 20px',
   },
   body: {
-    height: '90vh',
+    [theme.breakpoints.up('md')]: {
+      marginTop: 200,
+    },
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
   },
   introContainer: {
     textAlign: 'center',
@@ -28,6 +29,13 @@ const useStyles = makeStyles(theme => ({
   },
   introItem: {
     margin: 10,
+  },
+  introCopy: {
+    fontSize: '4rem',
+    marginBototm: 40,
+    [theme.breakpoints.up('md')]: {
+      fontSize: '6rem',
+    },
   },
   button: {
     margin: theme.spacing(1),
@@ -46,7 +54,7 @@ const Index = () => {
       <div className={classes.body}>
         <Grid container className={classes.introContainer}>
           <Grid item xs={12} className={classes.introItem}>
-            <Typography variant='h1'>How is your business doing financially?</Typography>
+            <Typography variant='h1' className={classes.introCopy}>How is your business doing financially?</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
             <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and actionable suggestions to improve your business.</Typography>
