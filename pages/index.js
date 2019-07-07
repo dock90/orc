@@ -1,5 +1,6 @@
 // next
 import Head from 'next/head';
+import Link from 'next/link';
 // material
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -51,7 +52,11 @@ const Index = () => {
             <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and actionable suggestions to improve your business.</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
-            <Fab variant="extended" color="primary" className={classes.button}><Typography variant='h5'>Start Now</Typography></Fab>
+
+            <Fab variant="extended" color="primary" className={classes.button}><Typography variant='h5'>
+              <Link href="/orc/generalbusiness" >
+                <a style={{ textDecoration: 'none', color: '#FFF' }}>Start Now</a>
+              </Link></Typography></Fab>
           </Grid>
         </Grid>
 
