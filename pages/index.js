@@ -48,7 +48,7 @@ const Index = () => {
     <div className={classes.root}>
       <Head>
         <title>ORC - Online Runway Calculator</title>
-        <meta name="description" content="Online Runway Calculator is a tool for solo creative business owners who want to run a profitable business." />
+        <meta name='description' content='Online Runway Calculator is a tool for solo creative business owners who want to run a profitable business.' />
       </Head>
       <Header />
       <div className={classes.body}>
@@ -60,8 +60,8 @@ const Index = () => {
             <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and actionable suggestions to improve your business.</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
-            <Button variant="contained" color="primary" className={classes.button}><Typography variant='h5'>
-              <Link prefetch href="/orc/generalbusiness" passHref>
+            <Button variant='contained' color='primary' className={classes.button}><Typography variant='h5'>
+              <Link prefetch href='/orc/generalBusiness' as='/orc/generalbusiness'>
                 <a style={{ textDecoration: 'none', color: '#FFF' }}>Start Now</a>
               </Link></Typography>
             </Button>
