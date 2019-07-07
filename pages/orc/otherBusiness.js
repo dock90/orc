@@ -70,10 +70,13 @@ const OtherBusiness = () => {
       </Head>
       <Grid container direction='row' justify='flex-end'>
         <Grid item>
-          <Button variant="contained" color="primary" className={classes.button} onClick={handleDataWrite}><Typography variant='h5'>
-            <Link href="/orc/generalbusiness" >
-              <a style={{ textDecoration: 'none', color: '#FFF' }}>Next</a>
-            </Link></Typography></Button>
+          <Link href="/orc/generalbusiness" >
+            <Button variant="contained" color="primary" className={classes.button} onClick={handleDataWrite}>
+              <Typography variant='h5'>
+                <a style={{ textDecoration: 'none', color: '#FFF' }}>Next</a>
+              </Typography>
+            </Button>
+          </Link>
         </Grid>
       </Grid>
       <Grid container className={classes.actionTextContainer}>
