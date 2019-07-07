@@ -20,7 +20,7 @@ import {
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    margin: '0px 20px 0px 20px'
+    margin: '0px 20px 20px 20px'
   },
   title: {
     fontSize: 14,
@@ -79,7 +79,17 @@ const BrandGuide = () => {
           </Grid>
         </Grid>
       </div>
-      <h2>Fonts</h2>
+      <div className={classes.root}>
+        <h2>Fonts</h2>
+        <Typography variant='h1'>H1 Heading</Typography>
+        <Typography variant='h2'>H2 Heading</Typography>
+        <Typography variant='h3'>H3 Heading</Typography>
+        <Typography variant='h4'>H4 Heading</Typography>
+        <Typography variant='h5'>H5 Heading</Typography>
+        <Typography variant='h6'>H6 Heading</Typography>
+        <Typography variant='body1'>Body: This is the body text for this project.</Typography>
+        <Typography variant='button'>CTA: This is the button text.</Typography>
+      </div>
     </div>
   )
 }
