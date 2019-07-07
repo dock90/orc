@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
 
 const Index = () => {
   const classes = useStyles();
-  console.log('Orc version: 0.0.4')
+  console.log('Orc version: 0.0.5')
   return (
     <div className={classes.root}>
       <Head>
@@ -60,13 +60,11 @@ const Index = () => {
             <Typography variant='h5'>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and actionable suggestions to improve your business.</Typography>
           </Grid>
           <Grid item xs={12} className={classes.introItem}>
-            <Link prefetch href="/orc/generalbusiness">
-              <Button variant="contained" color="primary" className={classes.button}>
-                <Typography variant='h5'>
-                  <a style={{ textDecoration: 'none', color: '#FFF' }}>Start Now</a>
-                </Typography>
-              </Button>
-            </Link>
+            <Button variant="contained" color="primary" className={classes.button}><Typography variant='h5'>
+              <Link prefetch href="/orc/generalbusiness" passHref>
+                <a style={{ textDecoration: 'none', color: '#FFF' }}>Start Now</a>
+              </Link></Typography>
+            </Button>
           </Grid>
         </Grid>
 
