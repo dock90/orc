@@ -1,11 +1,12 @@
 // next
 import Head from 'next/head';
+import Link from 'next/link';
 // material
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-
+import { ironsideGray } from '../../components/SharedStyles'
 // styles
 const useStyles = makeStyles(theme => ({
   root: {
@@ -23,13 +24,13 @@ const useStyles = makeStyles(theme => ({
   actionTextCopy: {
     marginBottom: 40
   },
-  typeContainer: {
+  choiceContainer: {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center'
   },
-  typeItem: {
-    minWidth: 200,
+  choiceItem: {
+    minWidth: 250,
     margin: 10,
   },
   choiceCard: {
@@ -37,6 +38,10 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: 250,
+    padding: 20,
+  },
+  choiceCopy: {
+    color: ironsideGray.background,
   }
 }));
 
@@ -69,25 +74,25 @@ const GeneralBusiness = () => {
           <Typography variant='h3' className={classes.actionTextCopy}>What kind of business do you have?</Typography>
         </Grid>
       </Grid>
-      <Grid container className={classes.typeContainer}>
-        <Grid item xs={2} className={classes.typeItem}>
+      <Grid container className={classes.choiceContainer}>
+        <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleDesignChoice}>
-            <Typography variant='h4'>Design</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>Design</Typography>
           </Card>
         </Grid>
-        <Grid item xs={2} className={classes.typeItem}>
+        <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleDevelopmentChoice}>
-            <Typography variant='h4'>Development</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>Development</Typography>
           </Card>
         </Grid>
-        <Grid item xs={2} className={classes.typeItem}>
+        <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handlePhotographyChoice}>
-            <Typography variant='h4'>Photography</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>Photography</Typography>
           </Card>
         </Grid>
-        <Grid item xs={2} className={classes.typeItem}>
+        <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleOtherChoice}>
-            <Typography variant='h4'>Other</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}><Link href='/orc/otherbusiness'><a style={{ textDecoration: 'none', color: ironsideGray.background }}>Other</a></Link></Typography>
           </Card>
         </Grid>
       </Grid>
