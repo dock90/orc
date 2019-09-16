@@ -77,22 +77,38 @@ const GeneralBusiness = () => {
       <Grid container className={classes.choiceContainer}>
         <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleDesignChoice}>
-            <Typography variant='h4' className={classes.choiceCopy}>Design</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>
+              <Link prefetch href='/orc/clientOverview' as='/orc/clientoverview'>
+                <a style={{ textDecoration: 'none', color: ironsideGray.background }}>Design</a>
+              </Link>
+            </Typography>
           </Card>
         </Grid>
         <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleDevelopmentChoice}>
-            <Typography variant='h4' className={classes.choiceCopy}>Development</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>
+              <Link prefetch href='/orc/clientOverview' as='/orc/clientoverview'>
+                <a style={{ textDecoration: 'none', color: ironsideGray.background }}>Development</a>
+              </Link>
+            </Typography>
           </Card>
         </Grid>
         <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handlePhotographyChoice}>
-            <Typography variant='h4' className={classes.choiceCopy}>Photography</Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>
+              <Link prefetch href='/orc/clientOverview' as='/orc/clientoverview'>
+                <a style={{ textDecoration: 'none', color: ironsideGray.background }}>Photography</a>
+              </Link>
+            </Typography>
           </Card>
         </Grid>
         <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleOtherChoice}>
-            <Typography variant='h4' className={classes.choiceCopy}><Link prefetch href='/orc/otherBusiness' as='/orc/otherbusiness'><a style={{ textDecoration: 'none', color: ironsideGray.background }}>Other</a></Link></Typography>
+            <Typography variant='h4' className={classes.choiceCopy}>
+              <Link prefetch href='/orc/otherBusiness' as='/orc/otherbusiness'>
+                <a style={{ textDecoration: 'none', color: ironsideGray.background }}>Other</a>
+              </Link>
+            </Typography>
           </Card>
         </Grid>
       </Grid>

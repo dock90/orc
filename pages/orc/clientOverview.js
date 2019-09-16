@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
   actionTextContainer: {
     marginTop: 50,
     [theme.breakpoints.up('md')]: {
-      marginTop: 280,
+      marginTop: 150,
     },
   },
   actionTextItem: {
@@ -51,7 +51,8 @@ const OtherBusiness = () => {
   }
   const classes = useStyles();
   const [values, setValues] = React.useState({
-    businessType: '',
+    rate: '',
+    clientBlocks: '',
   });
 
   const handleChange = name => event => {
@@ -81,7 +82,8 @@ const OtherBusiness = () => {
       </Grid>
       <Grid container className={classes.actionTextContainer}>
         <Grid item xs={12} className={classes.actionTextItem}>
-          <Typography variant='h3' className={classes.actionTextCopy}>What kind of business do you have?</Typography>
+          <Typography variant='h3' className={classes.actionTextCopy}>Whats your rate?</Typography>
+          <Typography variant='h5'>Use hourly rate or set project rate if you have a productized service offering.</Typography>
         </Grid>
       </Grid>
       <Grid container className={classes.typeContainer}>
@@ -89,10 +91,32 @@ const OtherBusiness = () => {
           <form noValidate autoComplete='off'>
             <TextField
               id="outlined-name"
-              label="Business Type"
+              label="Rate"
               className={classes.textField}
-              value={values.businessType}
-              onChange={handleChange('businessType')}
+              value={values.rate}
+              onChange={handleChange('rate')}
+              margin="normal"
+              variant="outlined"
+            />
+          </form>
+        </Grid>
+      </Grid>
+      <Grid container className={classes.actionTextContainer}>
+        <Grid item xs={12} className={classes.actionTextItem}>
+          <Typography variant='h3' className={classes.actionTextCopy}>How many client blocks do you have per week?</Typography>
+          <Typography variant='h5'>How many blocks of "deep work" you have to work on client work per week.</Typography>
+          <Typography variant='h5'>Never calculated this before? Use this worksheet then come back to this step.</Typography>
+        </Grid>
+      </Grid>
+      <Grid container className={classes.typeContainer}>
+        <Grid item xs={2} className={classes.typeItem}>
+          <form noValidate autoComplete='off'>
+            <TextField
+              id="outlined-name"
+              label="Client Blocks"
+              className={classes.textField}
+              value={values.clientBlocks}
+              onChange={handleChange('clientBlocks')}
               margin="normal"
               variant="outlined"
             />
