@@ -71,13 +71,13 @@ const OtherBusiness = () => {
       </Head>
       <Grid container direction='row' justify='flex-end'>
         <Grid item>
-          <Link prefetch href='/orc/haveClients' as='/orc/haveclients'>
-            <Button variant="contained" color="primary" className={classes.button} onClick={handleDataWrite}>
+          <Button variant="contained" color="primary" className={classes.button} onClick={handleDataWrite}>
+            <Link prefetch href='/orc/haveClients' as='/orc/haveclients'>
               <Typography variant='h5'>
                 <a style={{ textDecoration: 'none', color: '#FFF' }}>Next</a>
               </Typography>
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </Grid>
       </Grid>
       <Grid container className={classes.actionTextContainer}>
