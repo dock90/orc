@@ -79,7 +79,7 @@ const HaveClients = () => {
         <Grid item className={classes.choiceItem}>
           <Card elevation={5} className={classes.choiceCard} onClick={handleNoClients}>
             <Typography variant='h4' className={classes.choiceCopy}>
-              <Link prefetch href='/orc/clientOverview' as='/orc/clientoverview'>
+              <Link prefetch href='/orc/potentialRunway' as='/orc/potentialrunway'>
                 <a style={{ textDecoration: 'none', color: ironsideGray.background }}>No</a>
               </Link>
             </Typography>
