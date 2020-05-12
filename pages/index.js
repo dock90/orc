@@ -34,7 +34,7 @@ const Home = () => (
       <H1>How is your business doing financially?</H1>
       <H5>Do you know how much runway your business has and how efficiently you are utilizing your time? Answer a few questions to get clarity, insight and actionable suggestions to improve your business.</H5>
       <Action>
-        <Link href="/orc/type-of-business">
+        <Link href="/orc/business-type">
           <a>
             <PrimaryButton>start now</PrimaryButton>
           </a>

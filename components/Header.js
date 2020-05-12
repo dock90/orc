@@ -7,7 +7,7 @@ import { primary } from '../styles/Colors'
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 1rem;
+  padding: 1rem;
 
   a {
     text-decoration: none;

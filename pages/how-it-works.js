@@ -44,7 +44,7 @@ const About = () => (
       <Main>Finances are usually a confusing and most likely avoided subject for solo creatives. Yet understanding finances is critical if you are going to run a successful business. It literally makes or breaks your work.</Main>
       <Main>Keeping this in mind I came up with the online runway calculator - a simple tool that asks you a few questions and gives you valuable insight sna actionable next steps to understand where your business is and what steps to take next.</Main>
       <Action>
-        <Link href="/orc/type-of-business">
+        <Link href="/orc/business-type">
           <a>
             <PrimaryButton>start now</PrimaryButton>
           </a>

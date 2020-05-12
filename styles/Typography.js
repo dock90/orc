@@ -31,6 +31,13 @@ export const H5 = styled.h5`
   margin: 0;
 `
 
+export const H6 = styled.h6`
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Pridi Extralight,Roboto,Arial,sans-serif;
+  margin: 0;
+`
+
 export const Main = styled.p`
   font-size: 1rem;
   font-weight: 400;
