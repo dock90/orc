@@ -68,8 +68,9 @@ const Card = styled.div`
 
 const BusinessType = () => {
   const [type, setType] = useState(null)
+  const [details, setDetails] = useState(null)
 
-  console.log('Type: ', type)
+  console.log('Type: ', details)
 
   return (
     <Container>
@@ -81,14 +82,13 @@ const BusinessType = () => {
             </a>
           </Link>
         </Next>
-
       }
       <Title>
         <H3>What kind of business do you have?</H3>
       </Title>
       {type === 'Other' &&
         <Other>
-          <OtherType />
+          <OtherType onChange={(event) => setDetails(event.target.value)} />
         </Other>
       }
       {type !== 'Other' &&
@@ -115,7 +115,6 @@ const BusinessType = () => {
             </a>
           </Link>
           <Card onClick={() => setType('Other')}>
-            {/* TODO: Update display if other, present input */}
             <H4>Other</H4>
           </Card>
         </Cards>
